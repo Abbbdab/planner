@@ -8,46 +8,49 @@
         display: flex;
         flex-direction: column;
         position: relative;
-          &-topbar {
-            padding: 16px;
+
+        &-topbar {
+            position: fixed;
+            background-color: base.$bg-primary;
+            top: 0;
+            width: 100%;
+            z-index: 10;
             display: flex;
+            padding: 16px;
             justify-content: space-between;
             align-items: center;
-            color: base.$text-secondary;
-            height: 6%;
-            background-color: base.$bg-primary;
-         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+               box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
            
             h2 {
                 font-family: base.$heading-font;
                 font-weight: 600;
                 font-size: 1.1rem;
+                color: base.$text-primary;
             }
 
             a {
                 color: base.$text-secondary;
             }
-
-            
         }
-        main{
-            height: 100%;
+
+        main {
+            margin-top: 50px;
             background-color: base.$bg-primary;
 
-            overflow: hidden;
-
         }
-      
 
         &-mobilenav {
-            height: fit-content;
-            padding: 12px 4px;
-            position: relative;
+            position: fixed;
+            bottom: 0;
+            background-color: base.$bg-primary;
+            width: 100%;
+            z-index: 10;
             display: flex;
             justify-content: center;
-            background-color: base.$bg-primary;
-            height: 12%;
-            nav {
+            padding: 12px 0;
+            border-top: 1px solid base.$bg-tertiary;
+           
+                 nav {
                 width: 95%;
                 display: flex;
 
@@ -80,8 +83,86 @@
                     color: base.$text-primary;
                 }
             }
+ 
+        }
+
+
+
+
+        //   &-topbar {
+        //     padding: 16px;
+        //     display: flex;
+        //     justify-content: space-between;
+        //     align-items: center;
+        //     color: base.$text-secondary;
+        //     height: 6%;
+        //     background-color: base.$bg-primary;
+        //  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+           
+        //     h2 {
+        //         font-family: base.$heading-font;
+        //         font-weight: 600;
+        //         font-size: 1.1rem;
+        //     }
+
+        //     a {
+        //         color: base.$text-secondary;
+        //     }
+
+            
+        // }
+        // main{
+        //     height: 100%;
+        //     background-color: base.$bg-primary;
+
+        //     overflow: hidden;
+
+        // }
       
 
-        }
+        // &-mobilenav {
+        //     height: fit-content;
+        //     padding: 12px 4px;
+        //     position: relative;
+        //     display: flex;
+        //     justify-content: center;
+        //     background-color: base.$bg-primary;
+        //     height: 12%;
+        //     nav {
+        //         width: 95%;
+        //         display: flex;
+
+        //         border-radius: 8px;
+        //         justify-content: space-between;
+        //         align-items: center;
+        //         padding: 12px;
+        //         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        //         background-color: base.$bg-secondary;
+        //     }
+
+            
+        //     a {
+        //         color: base.$text-tertiary;
+        //         display: flex;
+        //         flex-direction: column;
+        //         text-decoration: none;
+        //         span {
+        //             font-family: base.$body-font;
+        //             color: base.$text-secondary;
+        //             margin-top: 6px;
+        //             font-size: 11px;
+        //             font-weight: 300;
+        //         }
+        //     }
+
+        //     .active {
+        //         color: base.$primary;
+        //         span {
+        //             color: base.$text-primary;
+        //         }
+        //     }
+      
+
+        // }
     }
 }
