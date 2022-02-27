@@ -1,4 +1,4 @@
-# planner
+# Planner
 A planner for students to keep track of their enrolled subjects, assessments and allow them to collaborate and create groups for studies.  
 
 # Tech stack
