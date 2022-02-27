@@ -1,0 +1,25 @@
+@use '../layout/breakpoints' as breakpoints;
+@use '../base' as base;
+
+.home {
+    overflow: scroll;
+    
+    @include breakpoints.media('<=phone') {
+
+        height: 100%;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+
+        section {
+            margin: 16px 0;
+            h1 {
+                font-size: 1.1rem;
+                font-weight: 500;
+                color: base.$text-secondary;
+            }
+        }
+
+    }
+
+}
