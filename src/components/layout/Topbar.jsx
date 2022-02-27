@@ -33,7 +33,7 @@ export default function Topbar() {
 
   return (
   
-    <div className="topbar">
+    <div className="layout-topbar">
         <h2>{ currentPage}</h2>
 
         <Link to="/profile">

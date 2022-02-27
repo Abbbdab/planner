@@ -19,7 +19,7 @@ export default function Layout({children}) {
 
   return (
     <div className="layout">
-        { screen < 768 && <><main><Topbar />{children}</main> <MobileNav/></>}
+        { screen < 768 && <><Topbar /><main>{children}</main> <MobileNav/></>}
     </div>
   )
 }

@@ -7,9 +7,9 @@ import { useState } from "react";
 export default function MobileNav() {
     const [active, setActive] = useState(false);
   return (
-    <nav className="layout-mobilenav">
-    
-       
+    <div className="layout-mobilenav">
+      <nav>
+          
        
         <NavLink to="/subjects">
              <FontAwesomeIcon icon={faBook} />
@@ -31,10 +31,11 @@ export default function MobileNav() {
 <FontAwesomeIcon icon={faCalendar} /><span>Calendar</span>
            
         </NavLink>
-         {/* <NavLink to="/profile">
-            <FontAwesomeIcon icon={faUser} />
-        </NavLink> */}
+      </nav>
     
-    </nav>
+     
+      
+    
+    </div>
   )
 }
