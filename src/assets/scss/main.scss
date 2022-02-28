@@ -2,6 +2,7 @@
 @use 'base';
 @use 'pages';
 @use 'components';
+@use 'mixins';
 
 html, body {
     font-family: base.$body-font;

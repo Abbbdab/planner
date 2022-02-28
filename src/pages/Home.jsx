@@ -1,4 +1,5 @@
 import Section from "../components/home/Section";
+import SectionCard from "../components/home/SectionCard";
 
 const late = [
   {
@@ -29,10 +30,28 @@ const late = [
 export default function Home() {
   return (
     <div className="home" >
-      <Section heading="Past due date" cards={late} />
+      <section>
+        <h1>Past due date</h1>
+        <SectionCard />
+      </section>
+      <section>
+        <h1>Due soon</h1>
+          <SectionCard />
+          <SectionCard />
+      </section>
+      <section>
+        <h1>Upcoming assignments</h1>
+          <SectionCard />
+      </section>
+      <section>
+        <h1>Graded</h1>
+          <SectionCard />
+          <SectionCard />
+      </section>
+      {/* <Section heading="Past due date" cards={late} />
       <Section heading="Due soon" cards={late} />
       <Section heading="Upcoming assignments" cards={late} />
-      <Section heading="Graded" cards={late} />
+      <Section heading="Graded" cards={late} /> */}
     </div>
   )
 }

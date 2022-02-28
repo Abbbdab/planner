@@ -1,6 +1,7 @@
 import MobileNav from "./layout/MobileNav";
 import Topbar from "./layout/Topbar";
 import { useState, useEffect } from "react";
+import Sidebar from "./layout/Sidebar";
 
 export default function Layout({children}) {
     const [screen, setScreen] = useState(window.innerWidth);
@@ -19,7 +20,8 @@ export default function Layout({children}) {
 
   return (
     <div className="layout">
-        { screen < 768 && <><Topbar /><main>{children}</main> <MobileNav/></>}
+        { screen <= 768 && <><Topbar /><main>{children}</main> <MobileNav/></>}
+        { screen > 768 && <><Sidebar /><main>{children}</main></>}
     </div>
   )
 }

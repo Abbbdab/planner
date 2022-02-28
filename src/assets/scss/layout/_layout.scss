@@ -4,7 +4,7 @@
 .layout {
     height: 100vh;
 
-    @include breakpoints.media('<=phone') {
+    @include breakpoints.media('<=tablet') {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -36,6 +36,11 @@
         main {
             margin-top: 50px;
             background-color: base.$bg-primary;
+            height: 82%;
+            overflow-y: scroll;
+            padding-bottom: 16px;
+           
+
 
         }
 
@@ -165,4 +170,15 @@
 
         // }
     }
+
+    @include breakpoints.media('>tablet') {
+        display: flex;
+        &-sidebar {
+            background-color: red;
+            width: 25%;
+        }
+        main {
+            width: 75%;
+        }
+}
 }
